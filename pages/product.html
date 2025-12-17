@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Hoodie | Lightwork</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Lightwork</h2>
+            </div>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / 
+            <a href="collections.html">Collections</a> / 
+            <a href="collections.html#hoodies">Hoodies</a> / 
+            <span>Urban Hoodie</span>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-wrapper">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../images/hoodie.jpg" alt="Urban Hoodie">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="../images/hoodie.jpg" alt="Urban Hoodie" class="active">
+                        <img src="../images/hoodie 2.jpg" alt="Urban Hoodie Front">
+                        <img src="../images/hoodie 3.jpg" alt="Urban Hoodie Back">
+                        <img src="../images/hoodie 4.jpg" alt="Urban Hoodie Detail">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Urban Hoodie</h1>
+                    <p class="product-description">This premium streetwear piece is crafted with the highest quality materials for ultimate comfort and style. Designed for the modern urban individual who values both fashion and function.</p>
+                    <p class="price">N$1,550.83</p>
+                    
+                    <div class="size-selector">
+                        <label for="size">Size:</label>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="xs">XS</button>
+                            <button class="size-btn" data-size="s">S</button>
+                            <button class="size-btn active" data-size="m">M</button>
+                            <button class="size-btn" data-size="l">L</button>
+                            <button class="size-btn" data-size="xl">XL</button>
+                        </div>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="decrease">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn" id="increase">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-full">Add to Cart</button>
+                        <button class="btn btn-outline wishlist-btn">
+                            <i class="far fa-heart"></i> Add to Wishlist
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> LH-001</p>
+                        <p><strong>Category:</strong> <a href="collections.html#hoodies">Hoodies</a></p>
+                        <p><strong>Tags:</strong> <a href="#">Urban</a>, <a href="#">Minimalist</a>, <a href="#">Premium</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Related Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/hoodie 2.jpg" alt="Minimalist Hoodie">
+                    <div class="product-info">
+                        <h3>Minimalist Hoodie</h3>
+                        <p class="price">N$1,637.32</p>
+                        <button class="btn btn-small quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="2" data-name="Minimalist Hoodie" data-price="1637.32"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 3.jpg" alt="Street Hoodie">
+                    <div class="product-info">
+                        <h3>Street Hoodie</h3>
+                        <p class="price">N$1,464.64</p>
+                        <button class="btn btn-small quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="3" data-name="Street Hoodie" data-price="1464.64"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 4.jpg" alt="Premium Hoodie">
+                    <div class="product-info">
+                        <h3>Premium Hoodie</h3>
+                        <p class="price">N$1,723.23</p>
+                        <button class="btn btn-small quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="4" data-name="Premium Hoodie" data-price="1723.23"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 5.jpg" alt="Classic Hoodie">
+                    <div class="product-info">
+                        <h3>Classic Hoodie</h3>
+                        <p class="price">N$1,378.39</p>
+                        <button class="btn btn-small quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="5" data-name="Classic Hoodie" data-price="1378.39"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <p class="price" id="modalPrice"></p>
+                    <p id="modalDescription">This premium streetwear piece is crafted with the highest quality materials for ultimate comfort and style. Designed for the modern urban individual who values both fashion and function.</p>
+                    <div class="size-selector">
+                        <label for="size">Size:</label>
+                        <select id="size">
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m" selected>M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <select id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" id="addToCart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Lightwork</h3>
+                    <p>Premium streetwear for the modern urban individual</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lightwork. All rights reserved. | Crafted with passion in Windhoek, Namibia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

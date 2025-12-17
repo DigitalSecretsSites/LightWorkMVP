@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Lightwork</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Lightwork</h2>
+            </div>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="collections.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / 
+            <span>Shopping Cart</span>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="container">
+            <h1 class="section-title">Your Shopping Cart</h1>
+            
+            <div class="cart-wrapper">
+                <!-- Cart Items -->
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be populated dynamically -->
+                </div>
+                
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h2>Cart Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>N$5,681.18</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>N$150.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>N$795.37</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>N$6,626.55</span>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <a href="collections.html" class="btn btn-outline">Continue Shopping</a>
+                        <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section class="recommended-products">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/hoodie 2.jpg" alt="Minimalist Hoodie">
+                    <div class="product-info">
+                        <h3>Minimalist Hoodie</h3>
+                        <p class="price">N$1,637.32</p>
+                        <button class="btn btn-small quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="2" data-name="Minimalist Hoodie" data-price="1637.32"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 3.jpg" alt="Street Hoodie">
+                    <div class="product-info">
+                        <h3>Street Hoodie</h3>
+                        <p class="price">N$1,464.64</p>
+                        <button class="btn btn-small quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="3" data-name="Street Hoodie" data-price="1464.64"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 4.jpg" alt="Premium Hoodie">
+                    <div class="product-info">
+                        <h3>Premium Hoodie</h3>
+                        <p class="price">N$1,723.23</p>
+                        <button class="btn btn-small quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="4" data-name="Premium Hoodie" data-price="1723.23"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 5.jpg" alt="Classic Hoodie">
+                    <div class="product-info">
+                        <h3>Classic Hoodie</h3>
+                        <p class="price">N$1,378.39</p>
+                        <button class="btn btn-small quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="5" data-name="Classic Hoodie" data-price="1378.39"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Lightwork</h3>
+                    <p>Premium streetwear for the modern urban individual</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lightwork. All rights reserved. | Crafted with passion in Windhoek, Namibia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script>
+        // Reset cart on page load (as per user request)
+        // Uncomment the following lines if you want to preserve cart between sessions
+        // let shoppingCart = [];
+        // if (localStorage.getItem('lightworkCart')) {
+        //     shoppingCart = JSON.parse(localStorage.getItem('lightworkCart'));
+        // }
+        
+        // Clear cart on page load (as per user request)
+        let shoppingCart = [];
+        localStorage.removeItem('lightworkCart');
+        
+        // Function to render cart items
+        function renderCartItems() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartSummaryContainer = document.querySelector('.summary-details');
+            
+            if (shoppingCart.length === 0) {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty. <a href="collections.html">Continue shopping</a></p>';
+                return;
+            }
+            
+            let cartHTML = '';
+            let subtotal = 0;
+            
+            shoppingCart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                
+                // Map product IDs to their respective images
+                const productImages = {
+                    '1': '../images/hoodie.jpg',
+                    '2': '../images/hoodie 2.jpg',
+                    '3': '../images/hoodie 3.jpg',
+                    '4': '../images/hoodie 4.jpg',
+                    '5': '../images/hoodie 5.jpg',
+                    '6': '../images/hoodie 6.jpg',
+                    '14': '../images/Tee.jpg',
+                    '15': '../images/Tee 2.jpg',
+                    '16': '../images/Tee 3.jpg',
+                    '17': '../images/Tee 4.jpg',
+                    '18': '../images/Tee 5.jpg',
+                    '19': '../images/Tee 6.jpg',
+                    '20': '../images/crop hoodie.jpg',
+                    '21': '../images/crop hoodie 2.jpg'
+                };
+                
+                // Use product-specific image if available, otherwise fallback to default
+                const productImage = productImages[item.id] || '../images/hoodie.jpg';
+                
+                // Default values for size and color if not present
+                const itemSize = item.size || 'M';
+                const itemColor = item.color || 'Black';
+                
+                cartHTML += `
+                    <div class="cart-item" data-key="${item.key}">
+                        <div class="item-image">
+                            <img src="${productImage}" alt="${item.name}">
+                        </div>
+                        <div class="item-details">
+                            <h3>${item.name}</h3>
+                            <p class="item-price">N$${item.price.toFixed(2)}</p>
+                            <p class="item-size">Size: ${itemSize} | Color: ${itemColor}</p>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn decrease-btn" data-key="${item.key}">-</button>
+                                <input type="number" value="${item.quantity}" min="1" max="10" class="quantity-input" data-key="${item.key}">
+                                <button class="quantity-btn increase-btn" data-key="${item.key}">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total">
+                            <p class="item-price">N$${itemTotal.toFixed(2)}</p>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn" data-key="${item.key}"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            cartItemsContainer.innerHTML = cartHTML;
+            
+            // Update cart summary
+            const tax = subtotal * 0.15; // 15% tax
+            const shipping = subtotal > 0 ? 150.00 : 0.00; // Free shipping if cart is empty
+            const total = subtotal + tax + shipping;
+            
+            if (cartSummaryContainer) {
+                cartSummaryContainer.innerHTML = `
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>N$${subtotal.toFixed(2)}</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>N$${shipping.toFixed(2)}</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>N$${tax.toFixed(2)}</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>N$${total.toFixed(2)}</span>
+                    </div>
+                `;
+            }
+            
+            // Add event listeners for quantity buttons
+            document.querySelectorAll('.decrease-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemKey = this.getAttribute('data-key');
+                    updateQuantity(itemKey, -1);
+                });
+            });
+            
+            document.querySelectorAll('.increase-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemKey = this.getAttribute('data-key');
+                    updateQuantity(itemKey, 1);
+                });
+            });
+            
+            // Add event listeners for quantity inputs
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', function() {
+                    const itemKey = this.getAttribute('data-key');
+                    const newQuantity = parseInt(this.value);
+                    if (!isNaN(newQuantity) && newQuantity > 0 && newQuantity <= 10) {
+                        updateQuantity(itemKey, 0, newQuantity);
+                    } else {
+                        // Reset to current quantity if invalid
+                        const item = shoppingCart.find(item => item.key === itemKey);
+                        if (item) {
+                            this.value = item.quantity;
+                        }
+                    }
+                });
+            });
+            
+            // Add event listeners for remove buttons
+            document.querySelectorAll('.remove-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemKey = this.getAttribute('data-key');
+                    removeFromCart(itemKey);
+                });
+            });
+        }
+        
+        // Function to update item quantity
+        function updateQuantity(itemKey, change, newQuantity = null) {
+            const itemIndex = shoppingCart.findIndex(item => item.key === itemKey);
+            if (itemIndex !== -1) {
+                if (newQuantity !== null) {
+                    shoppingCart[itemIndex].quantity = newQuantity;
+                } else {
+                    shoppingCart[itemIndex].quantity += change;
+                }
+                
+                // Remove item if quantity is 0 or less
+                if (shoppingCart[itemIndex].quantity <= 0) {
+                    shoppingCart.splice(itemIndex, 1);
+                }
+                
+                // Save and re-render
+                localStorage.setItem('lightworkCart', JSON.stringify(shoppingCart));
+                renderCartItems();
+                
+                // Update cart icon
+                updateCartIcon();
+            }
+        }
+        
+        // Function to remove item from cart
+        function removeFromCart(itemKey) {
+            shoppingCart = shoppingCart.filter(item => item.key !== itemKey);
+            localStorage.setItem('lightworkCart', JSON.stringify(shoppingCart));
+            renderCartItems();
+            
+            // Update cart icon
+            updateCartIcon();
+        }
+        
+        // Function to update cart icon (copied from main.js)
+        function updateCartIcon() {
+            const cartIcons = document.querySelectorAll('.fa-shopping-cart');
+            const cartItemCount = shoppingCart.reduce((total, item) => total + item.quantity, 0);
+            
+            cartIcons.forEach(icon => {
+                // Remove any existing badge
+                const existingBadge = icon.parentElement.querySelector('.cart-badge');
+                if (existingBadge) {
+                    existingBadge.remove();
+                }
+                
+                // Add badge if there are items in cart
+                if (cartItemCount > 0) {
+                    const badge = document.createElement('span');
+                    badge.className = 'cart-badge';
+                    badge.textContent = cartItemCount;
+                    badge.style.position = 'absolute';
+                    badge.style.top = '-8px';
+                    badge.style.right = '-8px';
+                    badge.style.backgroundColor = '#d22f27';
+                    badge.style.color = 'white';
+                    badge.style.borderRadius = '50%';
+                    badge.style.width = '20px';
+                    badge.style.height = '20px';
+                    badge.style.display = 'flex';
+                    badge.style.alignItems = 'center';
+                    badge.style.justifyContent = 'center';
+                    badge.style.fontSize = '12px';
+                    badge.style.fontWeight = 'bold';
+                    icon.parentElement.style.position = 'relative';
+                    icon.parentElement.appendChild(badge);
+                }
+            });
+        }
+        
+        // Render cart items when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCartItems();
+        });
+    </script>
+</body>
+</html>

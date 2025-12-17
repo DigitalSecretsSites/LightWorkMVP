@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail | Lightwork</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Lightwork</h2>
+            </div>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="collections.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / 
+            <a href="collections.html">Collections</a> / 
+            <span>Urban Hoodie</span>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-wrapper">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="../images/hoodie.jpg" alt="Urban Hoodie">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="../images/hoodie.jpg" alt="Urban Hoodie" class="active">
+                        <img src="../images/hoodie 2.jpg" alt="Urban Hoodie Side View">
+                        <img src="../images/hoodie 3.jpg" alt="Urban Hoodie Back View">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Urban Hoodie</h1>
+                    <p class="product-price">N$1,550.83</p>
+                    <p class="product-description">
+                        Elevate your streetwear game with our Urban Hoodie. Crafted from premium cotton blend fabric, 
+                        this hoodie offers both comfort and style. Featuring our signature logo embroidery and a 
+                        relaxed fit that works for any occasion.
+                    </p>
+                    
+                    <!-- Size Selection -->
+                    <div class="size-selection">
+                        <h3>Size</h3>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="S">S</button>
+                            <button class="size-btn" data-size="M">M</button>
+                            <button class="size-btn active" data-size="L">L</button>
+                            <button class="size-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Color Selection -->
+                    <div class="color-selection">
+                        <h3>Color</h3>
+                        <div class="color-options">
+                            <button class="color-swatch active" data-color="Black" style="background-color: #000;"></button>
+                            <button class="color-swatch" data-color="Gray" style="background-color: #ccc;"></button>
+                            <button class="color-swatch" data-color="Navy" style="background-color: #000080;"></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quantity and Add to Cart -->
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="btn btn-primary btn-add-to-cart" data-id="1" data-name="Urban Hoodie" data-price="1550.83">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                    
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <h3>Details</h3>
+                        <ul>
+                            <li>80% Cotton, 20% Polyester</li>
+                            <li>Machine wash cold</li>
+                            <li>Relaxed fit</li>
+                            <li>Kangaroo pocket</li>
+                            <li>Adjustable drawstring hood</li>
+                            <li>Made in Namibia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/hoodie 2.jpg" alt="Minimalist Hoodie">
+                    <div class="product-info">
+                        <h3>Minimalist Hoodie</h3>
+                        <p class="price">N$1,637.32</p>
+                        <button class="btn btn-small quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="2" data-name="Minimalist Hoodie" data-price="1637.32"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 3.jpg" alt="Street Hoodie">
+                    <div class="product-info">
+                        <h3>Street Hoodie</h3>
+                        <p class="price">N$1,464.64</p>
+                        <button class="btn btn-small quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="3" data-name="Street Hoodie" data-price="1464.64"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 4.jpg" alt="Premium Hoodie">
+                    <div class="product-info">
+                        <h3>Premium Hoodie</h3>
+                        <p class="price">N$1,723.23</p>
+                        <button class="btn btn-small quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="4" data-name="Premium Hoodie" data-price="1723.23"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/hoodie 5.jpg" alt="Classic Hoodie">
+                    <div class="product-info">
+                        <h3>Classic Hoodie</h3>
+                        <p class="price">N$1,378.39</p>
+                        <button class="btn btn-small quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-small btn-add-to-cart" data-id="5" data-name="Classic Hoodie" data-price="1378.39"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Lightwork</h3>
+                    <p>Premium streetwear for the modern urban individual</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lightwork. All rights reserved. | Crafted with passion in Windhoek, Namibia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script>
+        // Product detail specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Size selection
+            const sizeButtons = document.querySelectorAll('.size-btn');
+            sizeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    sizeButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                });
+            });
+            
+            // Color selection
+            const colorSwatches = document.querySelectorAll('.color-swatch');
+            colorSwatches.forEach(swatch => {
+                swatch.addEventListener('click', function() {
+                    // Remove active class from all swatches
+                    colorSwatches.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active class to clicked swatch
+                    this.classList.add('active');
+                });
+            });
+            
+            // Quantity controls
+            const quantityBtns = document.querySelectorAll('.quantity-btn');
+            quantityBtns.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.quantity-input');
+                    let value = parseInt(input.value);
+                    
+                    if (this.textContent === '+') {
+                        if (value < 10) {
+                            input.value = value + 1;
+                        }
+                    } else if (this.textContent === '-') {
+                        if (value > 1) {
+                            input.value = value - 1;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
